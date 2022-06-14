@@ -24447,8 +24447,8 @@ const listIPv4 = [
 ];
 
 function doLengthNewArray (arr) {
-const ArrNonRecurring = Array.from(new Set(arr));
-return ArrNonRecurring.length;
+const ArrNonRecurring = new Set(arr);
+return ArrNonRecurring.size;
 }
 
 console.log(doLengthNewArray(listIPv4));
